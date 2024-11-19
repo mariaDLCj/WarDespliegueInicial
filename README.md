@@ -18,7 +18,5 @@ ProxyPassReverse / balancer://tomcat-cluster/
 </Location>
 
 
-proxy
-proxy_ajp
-lbmethod_byrequests
-proxy_balancer
+proxy proxy_ajp lbmethod_byrequests proxy_balancer
+root@usuario-VirtualBox:/usr/tomcat10/bin# sudo nano /etc/systemd/system/tomcat.service
