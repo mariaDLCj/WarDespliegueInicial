@@ -22,6 +22,7 @@ proxy proxy_ajp lbmethod_byrequests proxy_balancer
 root@usuario-VirtualBox:/usr/tomcat10/bin# sudo nano /etc/systemd/system/tomcat.service
 
 Voy a par en la ruta anterior qe estaba vacía lo siguiente:
+
 [Unit]
 Description=Apache Tomcat 10 Web Application Container
 After=network.target
