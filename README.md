@@ -16,3 +16,9 @@ ProxyPassReverse / balancer://tomcat-cluster/
     Allow from all
     Require host localhost
 </Location>
+
+
+proxy
+proxy_ajp
+lbmethod_byrequests
+proxy_balancer
