@@ -70,3 +70,20 @@ nov 19 14:33:05 usuario-VirtualBox systemd[1]: tomcat.service: Failed with resul
 nov 19 14:33:05 usuario-VirtualBox systemd[1]: Failed to start Apache Tomcat 10 Web Application Container.
 root@usuario-VirtualBox:/usr/tomcat10/bin# 
 
+
+CREATE DATABASE IF NOT EXISTS pruebasjava;
+
+USE pruebasjava;
+
+CREATE TABLE IF NOT EXISTS `aves` (
+  `anilla` varchar(3) COLLATE utf8_spanish_ci NOT NULL,
+  `especie` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
+  `lugar` varchar(30) COLLATE utf8_spanish_ci NOT NULL,
+  `fecha` date NOT NULL,
+  PRIMARY KEY (`anilla`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_spanish_ci;
+
+
+INSERT INTO `aves` VALUES ('123','cigueña','En el campo','2024-05-09'),('AAS','Cormorán','En la playa','2024-10-10'),('ABC','Golondrina','En el tejado','2024-05-09');
+
+
